@@ -1,5 +1,7 @@
 package jp.jc21.t.yoshizawa.WEB01;
 
+
+
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -8,28 +10,36 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
+
 /**
- * Servlet implementation class LanguageRequestServlet
- */
-@WebServlet("/languageRequest")
+* Servlet implementation class SentimentRequestServlet
+*/
+@WebServlet("/SentimentRequest")
 public class SentimentRequestServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	/**
-	 * @see HttpServlet#HttpServlet()
-	 */
-	public SentimentRequestServlet() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
-	 *      response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		request.getRequestDispatcher("/WEB-INF/jsp/languageRequest.jsp").forward(request, response);
-	}
+
+   /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public SentimentRequestServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+
+
+   /**
+     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+     *      response)
+     */
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        request.getRequestDispatcher("/WEB-INF/jsp/SentimentRequest.jsp").forward(request, response);
+    }
+
+
 
 }
